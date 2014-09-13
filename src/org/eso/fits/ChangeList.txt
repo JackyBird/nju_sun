@@ -1,0 +1,196 @@
+# Change List for Java FITS library
+#
+# v0.30, 1999-05-03
+#
+1999-05-03: FitsTable.java 1.1 -> 1.2
+            Change name of method insertColumn() to insertColumnAt()
+#
+# v0.35, 1999-05-06
+#
+1999-05-06: FitsException.java 1.1 -> 1.2
+            Add NOHEADERSPACE exception type
+1999-05-06: FitsHeader.java 1.1 -> 1.2
+            Check if Null keyword is added
+1999-05-06: FitsKeyword.java 1.1 -> 1.2
+            Convert String to Date if possible in getDate()
+1999-05-06: FitsHDUnit.java 1.1 -> 1.2
+            Throw a NOHEADERSPACE exception in saveFile()
+#
+# v0.40, 1999-05-26
+#
+1999-05-26: FitsKeyword.java 1.2 -> 1.3
+            Given example of hierarchical keyword name convention
+1999-05-26: FitsHeader.java 1.2 -> 1.3
+            Throw FitsException if error in header FITS keywords
+1999-05-26: FitsFile.java 1.1 -> 1.2
+            Add static method 'isFitsFile() and close file correctly
+#
+# v0.45, 1999-11-29
+#
+1999-11-29: FitsFile.java 1.2 -> 1.3
+            Add getFile() method and use File instead of string for
+            file reference
+#
+# v0.50, 1999-11-30
+#
+1999-11-30: Fits.java 1.1 -> 1.2
+1999-11-30: FitsColumn.java 1.1 -> 1.2
+1999-11-30: FitsData.java 1.1 -> 1.2
+1999-11-30: FitsException.java 1.2 -> 1.3
+1999-11-30: FitsFile.java 1.3 -> 1.4
+1999-11-30: FitsHDUnit.java 1.2 -> 1.3
+1999-11-30: FitsHeader.java 1.3 -> 1.4
+1999-11-30: FitsKeyword.java 1.3 -> 1.4
+1999-11-30: FitsMatrix.java 1.1 -> 1.2
+1999-11-30: FitsTable.java 1.2 -> 1.3
+1999-11-30: FitsTform.java 1.1 -> 1.2
+            Change layout to conform to Java Code Convension
+#
+# v0.60, 2000-01-07
+#
+2000-01-07: Fits.java 1.2 -> 1.3
+2000-01-07: FitsColumn.java 1.2 -> 1.3
+2000-01-07: FitsData.java 1.2 -> 1.3
+2000-01-07: FitsException.java 1.3 -> 1.4
+2000-01-07: FitsFile.java 1.4 -> 1.5
+2000-01-07: FitsHDUnit.java 1.3 -> 1.4
+2000-01-07: FitsHeader.java 1.4 -> 1.5
+2000-01-07: FitsKeyword.java 1.4 -> 1.5
+2000-01-07: FitsMatrix.java 1.2 -> 1.3
+2000-01-07: FitsTable.java 1.3 -> 1.4
+2000-01-07: FitsTform.java 1.2 -> 1.3
+            Correct RCS strings in headers
+2000-01-07: FitsFile.java 1.5 -> 1.6
+            Use CanonicalPath instead of AbsolutePath for name
+2000-01-07: FitsHeader.java 1.5 -> 1.6
+            Read full header record at once
+#
+# v0.70, 2000-01-28
+#
+2000-01-28: FitsHeader.java 1.6 -> 1.7
+            Correct error in skipping keyword cards after END
+2000-01-28: FitsKeyword.java 1.5 -> 1.6
+            Define SimpleDateFormats as static variables
+#
+# v0.80, 2000-02-04
+#
+2000-02-02: FitsKeyword.java 1.6 -> 1.7
+            Use substring instead of creating new strings
+2000-02-03: FitsKeyword.java 1.7 -> 1.8
+            Limit search for fields to Fits.CARD characters
+2000-02-04: FitsKeyword.java 1.8 -> 1.9
+            Improve decoding of HIERARCH keyword names
+2000-02-04: FitsKeyword.java 1.9 -> 1.10
+            Check if byte[] card has 80 chars, for name to UpperCase
+2000-02-04: FitsMatrix.java 1.3 -> 1.4
+            Add methods for reading values as short and int
+#
+# v0.81, 2000-06-06
+#
+2000-02-09: FitsKeyword.java 1.10 -> 1.12
+            Several minor corrections of issues found during complete test
+2000-06-06: FitsFile.java 1.6 -> 1.7
+            Correct and extent tests in writeFile() and saveFile()
+2000-06-06: FitsHDUnit.java 1.4 -> 1.5
+            Add method canSave()
+#
+# v0.82, 2001-09-19
+#
+2001-04-17: TestFits.java 1.1 -> 1.2
+            Change name, update comments and add to jar file
+2001-09-19: ListFits.java 1.2 -> 1.3
+            Upgrade comments and add to jar file
+#
+# v0.90, 2002-03-01
+#
+2002-02-27: FitsHeader.java 1.7 -> 1.8
+            Add check for Random Group format
+2002-02-27: FitsFile.java 1.7 -> 1.8
+            Add constructor with internal storage flag
+2002-02-27: FitsHDUnit.java 1.5 -> 1.6
+            Change constructor by adding internal storage flag and 
+	    upgrade for Random Group data
+2002-02-28: FitsColumn.java 1.3 -> 1.4
+            Change constructor and add setData methods
+2002-02-28: FitsTable.java 1.4 -> 1.5
+            Update for new interface to Column class
+2002-02-28: FitsData.java 1.3 -> 1.4
+            Allow internal storage of data matrix
+2002-02-28: FitsHDUnit.java 1.6 -> 1.7
+            Include internal storage flag in data matrix calls
+2002-02-28: FitsMatrix.java 1.4 -> 1.5
+            Use FitsWCS class for world coordinates
+#
+# v0.91, 2002-05-06
+#
+2002-04-04: FitsMatrix.java 1.5 -> 1.6
+            Rename first getFloatValues to getIntValues
+2002-04-17: FitsData.java 1.4 -> 1.5
+            Add new constructor
+2002-05-03: CopyFits.java 1.1
+            Example example for copying a FITS file
+2002-05-03: SaveFits.java 1.1
+            Example and test for changing a FITS header and saving it
+2002-05-03: FitsWCS.java 1.1
+            First version of simple WCS class
+2002-05-03: FitsHeader.java 1.8 -> 1.9
+            Add setExtension method
+2002-05-03: FitsData.java 1.5 -> 1.6
+            Add new constructor
+2002-05-06: FitsMatrix.java 1.6 -> 1.7
+            Add new constructor and method to write data matrix
+2002-05-06: FitsRGroup.java 1.1
+            First version of RandomGroup data matrix class
+2002-05-06: FitsTable.java 1.5 -> 1.6
+            Add getHeader method
+2002-05-06: CreateFits.java 1.1
+            Test for creating a FITS file from data arrays
+2002-05-06: FitsWCS.java 1.1 -> 1.2
+            Correct default CTYPE string and remove print statements
+#
+# v0.92, 2003-04-11
+#
+2003-04-08: FitsWCS.java 1.2 -> 1.3
+            Insert check for CTYPE keyword length
+2003-04-11: FitsMatrix.java 1.7 -> 1.9
+            Clarify some exception message strings
+2003-04-11: FitsFile.java 1.8 -> 1.10
+            Add doumentation for FitsFile(String) constructor
+2003-04-11: FitsTform.java 1.3 -> 1.4
+2003-04-11: FitsHeader.java 1.9 -> 1.10
+2003-04-11: FitsKeyword.java 1.12 -> 1.13
+2003-04-11: FitsTform.java 1.3 -> 1.4
+2003-04-11: FitsColumn.java 1.4 -> 1.5
+2003-04-11: FitsData.java 1.6 -> 1.7
+            Cleanup documentation
+#
+# v0.93, 2005-09-16
+#
+2005-09-16: FitsFile.java  1.12 -> 1.13
+            Update to Java 1.5.x i.e.  rename 'enum' to 'itr'
+2005-09-16: FitsHeader .java  1.11 -> 1.12
+            Update to Java 1.5.x i.e.  rename 'enum' to 'itr'
+2005-09-16: FitsTable.java  1.7 -> 1.8
+            Update to Java 1.5.x i.e.  rename 'enum' to 'itr'
+2005-09-16: TestFits.java  1.3 -> 1.4
+            Update to Java 1.5.x i.e.  rename 'enum' to 'itr'
+#
+# v0.94, 2007-01-05
+#
+2007-01-02: FitsWCS.java 1.4 -> 1.5
+            Correct index error in CD-keyword
+2007-01-04: FitsMatrix.java 1.10 -> 1.11
+            Correct parameter names in documentation
+2007-01-04: FitsHeader.java 1.12 -> 1.13
+            Method FitsHeader.getKeywords now returns a ListIterator
+            Change to ArrayList, HashMap and generic types in Java 1.5
+2007-01-04: FitsTable.java 1.8 -> 1.9
+            Change to ArrayList, HashMap and generic types in Java 1.5
+2007-01-04: FitsFile.java 1.13 -> 1.15
+            Change to ArrayList, HashMap and generic types in Java 1.5
+2007-01-04: TestWCS.java  1.1
+            Add class to test WCS conversions
+2007-01-04: Makefile 1.1 -> 1.2
+            Move makefile to top directory and add CVS id's
+2007-01-04: TestFits.java  1.4 -> 1.5
+            Upgrade to ListIterator for getKeywords

@@ -1,0 +1,16 @@
+* {
+margin: 0px;
+padding: 0px;
+font-size: 12px;
+}
+.div_content_cont_table{
+	border: 1px solid #E4E4E4;
+}
+
+.div_content_cont_tr td{
+	background-color: #D6ECEC;
+	border-bottom: 1px solid #E4E4E4;
+}
+#condition-lists{
+	
+}

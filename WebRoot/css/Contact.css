@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#introduce{
+	width: 760px;
+	height: 680px;
+	background-color: #ffffdd;
+	margin: auto;
+}
+
+h1{
+	font-size: 2em;
+	text-align: center;
+}
+
+li{		
+	list-style: none;
+	font-size: 1em;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="NJU_Sun"
+  id="myeclipse.1404283993140"
+  context-root="/NJU_Sun"
+  j2ee-spec="5.0"
+  archive="NJU_Sun.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

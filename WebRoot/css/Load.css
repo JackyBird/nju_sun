@@ -1,0 +1,163 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #99CCCC;
+	color:#222;
+}
+a{
+	text-decoration:none;
+}
+table {
+	overflow:hidden;
+	border:1px solid #d3d3d3;
+	background:#fefefe;
+	/*width:70%;*/
+	/*margin:0 auto;*/
+	-moz-border-radius:5px; /* FF1+ */
+	-webkit-border-radius:5px; /* Saf3-4 */
+	border-radius:5px;
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+#container{
+	height: 670px;
+	width: 1000px;
+	border: 1px solid #99CCCC;
+	margin: 0 auto;
+	background-color: #99CCCC;
+}
+
+#condition{
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+	/*border: 1px ridge #dddddd;*/
+	width: 1000px;
+	border-style: ridge;
+	border-width: 2px;
+
+}
+
+
+#condition-lists{
+	background-color: #d4e3e5;
+	font-size: 12px;
+	text-align: center;
+}
+
+#date{
+	width: 105px;
+}
+
+#head{
+	font-size: 13px;
+	font-weight: bold;
+}
+.head-start{
+	width: 60px;
+}
+.head-end{
+	width: 60px;
+}
+.head-wavelength{
+	width: 48px;
+}
+.head-offset{
+	width: 90px;
+}
+.head-img{
+	width: 90px;
+}
+.select select{
+	width: 90px;
+}
+#wavelength select{
+	width: 80px;
+} 
+#offset select{
+	width: 80px;
+} 
+#img select{
+	width: 80px;
+} 
+#package{
+	height: 550px;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	/*background-color: black;*/
+}
+
+.lists-head{
+	font-size: 14px;
+}
+
+
+
+#package-btn{
+	background: #317CC8;
+	width: 150px;
+	height: 35px;
+	color: #fff;
+	margin: 0 auto;
+	margin-left: 310px;
+	border: 1px solid #99CCCC;
+	border-radius: 5px;
+}
+#condition tr,th{
+	height: 29px;
+}
+
+
+#package-btn:hover {
+color: #fff;
+background-color: #00a1e4;
+}
+#search{
+	background: #317CC8;
+	width: 80px;
+	height: 20px;
+	color: #fff;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+}
+#search:hover {
+	color: #fff;
+	background-color: #00a1e4;
+}
+
+
+#page{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 12px;
+	text-align:center;
+}
+
+#page a{
+	display: inline-block;
+	background-color: #317CC8;
+	text-decoration: none;
+	padding-left: 8px;
+	color: #FFF;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+#page a:hover,#page a span:hover{
+	font-color:#000;
+}
+
+#page a span{
+	display: inline-block;
+	background-color: #317CC8;
+	height: 24px;
+	line-height: 24px;
+	padding-right: 8px;
+	cursor: pointer;
+	border-radius: 5px;
+}

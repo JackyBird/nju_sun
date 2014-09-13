@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<script type="text/javascript">
+		 function ResumeError(){ 
+			return true; 
+		 } 
+		 window.onerror = ResumeError; 
+	</script>
+	<script type="text/javascript" src="../common/scripts/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="../common/scripts/FusionCharts/FusionCharts.js"></script>
+	<script type="text/javascript" src="../common/scripts/FusionCharts/FusionChartsExportComponent.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
+	<script type="text/javascript" src="../common/scripts/common.js"></script>
+	<script type="text/javascript" src="../common/scripts/calendar/WdatePicker.js"></script>
+	<script type="text/javascript" src="../common/scripts/DD_belatedPNG.js"></script>
+	<script type="text/javascript">
+		//控制窗口满屏
+		//self.moveTo(0, 0);
+		//self.resizeTo(screen.availWidth, screen.availHeight);
+		/*判断IE版本*/
+		var arVersion = navigator.appVersion.split("MSIE"); 
+		var version = parseFloat(arVersion[1]); 
+		if(version < 7){
+			//整体窗体透明的解决方案
+			DD_belatedPNG.fix('#div_top_logo_item1,#div_top_logo_item2');
+		}
+	</script>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+  <body>
+  	<img class="div_top_img" src="../common/images/top_bg.png" />
+  	<div class="div_container">
+  		<!-- top -->
+	  		<div class="div_top">
+	  			<div class="div_top_link" align="right">
+	  				<table cellspacing="0" cellpadding="0" >
+	  					<tr>
+	  						<td>当前用户：</td>
+							<td class="div_top_link_line">&nbsp;</td>
+							<td><a href="#" title="点击进入主控台">主控台</a></td>
+						</tr>
+	  				</table>
+	  			</div>
+	  			<div class="div_top_logo">
+	  				<table cellpadding="0" cellspacing="0">
+	  					<tr>
+	  						<td>
+	  							<div class="div_top_logo_item1" id="div_top_logo_item1">
+	  								&nbsp;
+	  							</div>
+	  						</td>
+	  						<td>
+								<div class="div_top_logo_item2" id="div_top_logo_item2">
+	  								&nbsp;
+	  							</div>
+							</td>
+	  					</tr>
+	  				</table>
+	  			</div>
+	  		</div>
+	  		<!-- nav -->
+	  		<div class="div_nav">
+		  		<table class="div_nav_cont" width="100%" cellpadding="0" cellspacing="0" border="0">
+				    <tr class="div_nav_tr">
+				    	<td valign="middle">
+				  			<table class="div_nav_table" width="auto" cellpadding="0" cellspacing="0" border="0">
+				            	<tr id="div_nav_tr_item">
+				    				<td onclick="change_nav('console')" class="div_nav_td_over">首页</td>
+				                    <td onclick="change_nav('sbxx')">设备管理</td>
+				                    <td onclick="change_nav('xmgl')">项目管理</td>
+				                    <td onclick="change_nav('sbqx')">设备缺陷管理</td>
+				                </tr> 
+				            </table>
+				        </td>
+				    </tr>
+				</table>            
+	  		</div>
+	  		<!-- cont -->
+	  		<div class="div_content">
+	  			
+		  		<!-- item3_only -->
+		  		<div class="div_content_item_only">
+		  			<div class="div_content_title_only">
+		  				<table class="div_content_title_tb_only" cellpadding="0" cellspacing="0">
+		  					<tr>
+		  						<td class="div_content_title_tb_item1_only">设备缺陷</td>
+		  						<td class="div_content_title_tb_item2_only">&nbsp;</td>
+		  						<td class="div_content_title_tb_item3_only">
+		  							<a href="#">MORE>></a>
+		  						</td> 
+		  					</tr>
+		  				</table>
+		  			</div>
+		  			<div class="div_content_cont_only">
+		  				<div class="div_content_cont_only_condition">
+		  					<table class="div_content_cont_only_condition_tab" cellpadding="0" cellspacing="0" >
+		  						<tr>
+		  							<td align="right">开始时间：</td>
+		  							<td align="left">
+		  								<input class="div_time" id="stime" type="text" onclick="WdatePicker({el:'stime',skin:'whyGreen',dateFmt:'yyyy-MM-dd'})"/>
+		  							</td>
+		  							<td align="right">结束时间：</td>
+		  							<td align="left">
+		  								<input class="div_time" id="etime" type="text" onclick="WdatePicker({el:'etime',skin:'whyGreen',dateFmt:'yyyy-MM-dd'})"/>
+		  							</td>
+		  							<td align="center">
+		  								<input class="div_button" type="button" value=" 查询 " onclick="loading_sb_data()" />
+		  							</td>
+		  						</tr>
+		  					</table>
+		  				</div>
+		  				<div class="div_content_cont_only_data" id="div_sbqx">
+		  					&nbsp;设备缺陷数据。。。
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="div_clear">&nbsp;</div>
+		  		
+	  		<!-- copyright -->
+	  		<div class="div_copyright">
+	  			南京鼎乾信息科技有限公司版权所有 2014 copyright
+	  		</div>
+  	</div>
+	<script type="text/javascript">
+		function GetObjClient(){
+	        var objC=0,objH=0;
+	        //标准兼容模式开启
+	        if(document.compatMode=="CSS1Compat"){
+                objC=parseFloat(document.documentElement.clientWidth);
+                objH=parseFloat(document.documentElement.clientHeight);
+	        }else if(document.compatMode == "BackCompat"){
+                //标准兼容模式关闭
+                objC=parseFloat(document.body.clientWidth);
+                objH=parseFloat(document.body.clientHeight);
+	        }
+	        return {w:objC,h:objH}
+		}
+		var he = parseInt(GetObjClient().h);
+		if(he > 914){
+			$(".div_copyright").css("marginTop",(he-884)+"px");
+		}else{
+			$(".div_copyright").css("marginTop","30px");
+		}
+		
+	</script>
+
+
+  </body>
+</html>

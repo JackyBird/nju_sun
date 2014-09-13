@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#introduce{
+	width: 1000px;
+	height: 680px;
+	background-color: #f4f4f4;
+	margin: auto;
+}
+
+h1{
+	font-size: 2em;
+	text-align: center;
+}
+
+li{
+	list-style: none;
+	font-size: 1em;
+}
+
+#pic1{
+	margin-left: 60px;
+	float: left;
+	width: 361px;
+	height: 237px;
+}
+
+#pic2{
+	margin-left: 300px;
+	float: left;
+	width: 169px;
+	height: 237px;
+}
+
+#pic-describe{
+	text-align: center;
+	font-size: 13px;
+}

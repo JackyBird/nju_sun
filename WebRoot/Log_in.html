@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/Sign_in.css"/>
+		<title>µÇÂ¼</title>
+	</head>
+	<body>	
+		<div id="container">
+			<div id="register-info">
+				<h3>
+					µÇÂ¼
+				</h3>
+				<div id="user-info">
+					<form action="LoginServlet" method="post" onsubmit="return sub()">
+						<ul>
+							<li>
+								<span>µÇÂ¼Ãû</span>
+								<input id="loginname" name="loginname" tabindex="1" class="login-name" type="text" value="">
+							</li>
+							<li>
+								<span>µÇÂ¼ÃÜÂë</span>
+                  				<input id="password" name="password" tabindex="2" class="password main-password" type="password" value="">
+               	 			</li>
+							<li>
+								<span class="code-title">ÑéÖ¤Âë</span>
+                    			<input id="validateCode" name="validateCode" tabindex="3" class="code" type="text" value="">
+            				</li>
+            				<li class="next-btn">
+			                	<span></span>
+			                	<input class="next-step" value="µÇÂ½" tabindex="4" type="button" onclick="sub()"/>
+			                </li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>	
+<script type="text/javascript">
+function sub() {
+	var loginname = document.getElementById("loginname").value;
+	if(loginname==""){
+		alert("ÇëÌîĞ´µÇÂ½Ãû£¡");
+		return false;
+	}
+	var password = document.getElementById("password").value;
+	if(password==""){
+		alert("ÇëÌîĞ´ÃÜÂë£¡");
+		return false;
+	}
+}
+</script>		

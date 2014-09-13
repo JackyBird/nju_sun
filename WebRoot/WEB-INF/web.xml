@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SignServlet</servlet-name>
+    <servlet-class>servlet.SignServlet</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+
+	<!-- 生成验证码 -->
+	<servlet>
+		<servlet-name>authImg</servlet-name>
+		<servlet-class>com.petrochina.servlet.AuthImg</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResolveServlet</servlet-name>
+    <servlet-class>servlet.ResolveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ZipServlet</servlet-name>
+    <servlet-class>servlet.ZipServlet</servlet-class>
+  </servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>authImg</servlet-name>
+		<url-pattern>/authImg</url-pattern>
+	</servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>SignServlet</servlet-name>
+    <url-pattern>/SignServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResolveServlet</servlet-name>
+    <url-pattern>/ResolveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ZipServlet</servlet-name>
+    <url-pattern>/ZipServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>home_Page.html</welcome-file>
+  </welcome-file-list>
+</web-app>
